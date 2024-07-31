@@ -430,7 +430,7 @@ main{
     height: auto;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .plans__title h2{
     margin-bottom: 30px;
@@ -453,14 +453,14 @@ main{
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 
-    &::-webkit-scrollbar{
+    /* &::-webkit-scrollbar{
         height: 5px;
         background-color: var(--off-white);
     }
     &::-webkit-scrollbar-thumb{
         background-color: var(--bitcoin-orange);
         border-radius: 4px;
-    }
+    } */
 }
 .plans__card{
     position: relative;
@@ -509,6 +509,7 @@ main{
     font-size: 1.2rem;
     line-height: 15px;
     color: #363636;
+    margin-right: 4px;
 }
 .card__msg{
     margin-bottom: 15px;
@@ -536,4 +537,33 @@ main{
     display: inline-block;
     background-image: url('./assets/icons/arrow-right.svg');
     vertical-align: text-bottom;
+}
+footer{
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--bitcoin-orange);
+}
+footer section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer section a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--just-white);
+    margin: 4px 0;
+}
+footer figure{
+    width: 64px;
+    height: 50px;
+    margin: auto 0;
+}
+footer figure img{
+    width: 100%;
 }
